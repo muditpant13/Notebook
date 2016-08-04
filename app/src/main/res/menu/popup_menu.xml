@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/menuItemViewNote"
+        android:title="View Note"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:icon="@mipmap/ic_remove_red_eye_black_18dp"
+        app:showAsAction="always|withText"
+        />
+    <item
+        android:title="Edit Note"
+        android:id="@+id/menuItemEditNote"
+        android:orderInCategory="99"
+        android:icon="@mipmap/ic_mode_edit_black_18dp"
+        app:showAsAction="always|withText" />
+
+</menu>

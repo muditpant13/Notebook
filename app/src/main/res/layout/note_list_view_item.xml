@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/backgroundLightGray"
+    android:id="@+id/cvNoteListItemCard"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/rlNoteDataLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:id="@+id/llNoteTitleLayout"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNoteTitle"
+                android:textSize="18sp"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="@null"
+                android:textColor="@color/textDarkGray"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNoteCreateTime"
+                android:textSize="14sp"
+                android:text="@null"
+                android:textColor="@color/textGray"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/textGray"
+            android:gravity="left"
+            android:layout_below="@+id/llNoteTitleLayout"
+            android:text="@null"
+            android:id="@+id/tvNoteText"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
